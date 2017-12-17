@@ -6,12 +6,14 @@ import { MatIconModule, MatButtonModule, MatIcon, MatCardModule } from '@angular
 import { ResumeComponent } from './containers/resume/resume.component';
 import { ContactFormComponent } from './containers/contact-form/contact-form.component';
 import { PortfolioComponent } from './containers/portfolio/portfolio.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   imports: [
-    CommonModule, MatIconModule, MatButtonModule, MatCardModule
+    CommonModule, MatIconModule, MatButtonModule, MatCardModule, PdfViewerModule
   ],
-  declarations: [AboutComponent, IconButtonComponent, ResumeComponent, ContactFormComponent, PortfolioComponent],
+  declarations: [AboutComponent, IconButtonComponent, ResumeComponent, ContactFormComponent, PortfolioComponent, NavbarComponent],
   exports: [
     AboutComponent, MatCardModule
   ]
