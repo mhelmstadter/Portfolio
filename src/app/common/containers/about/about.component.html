@@ -1,2 +1,16 @@
-<p>Hey</p>
-<app-icon-button icon="home" (click)="goHome($event)"></app-icon-button>
+<app-icon-button icon="home" (click)="openAbout($event)">
+</app-icon-button>
+<app-icon-button icon="format_align_left" (click)="openResume($event)"></app-icon-button>
+<app-icon-button icon="folder" (click)="openPortfolio($event)"></app-icon-button>
+<app-icon-button icon="send" (click)="openContactForm($event)"></app-icon-button>
+<mat-card>
+    <div class="text">
+        <h1>Madeline</h1>
+        <p>
+            A third-year Computer Science major at Georgia Tech with a concentration in AI and Human-Computer Interaction, strong leadership
+            and interpersonal skills, and an ability to learn and work well under pressure. Seeking an internship for Summer
+            2018 that will allow her to effectively contribute my abilities to the organization, expand her skill set, and
+            build her professional career.
+        </p>
+    </div>
+</mat-card>
